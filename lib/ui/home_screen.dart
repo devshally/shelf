@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final Network network = Network();
+    final NetworkService network = NetworkService();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Shelf'),

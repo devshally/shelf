@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:shelf/model/author.dart';
 
 ///This class is going to be used to fetch data from the api.
-class Network {
+class NetworkService {
   Future<List<Author>> getAuthorData(int page) async {
     final Dio dio = Dio();
     final response = await dio.get('https://quotable.io/authors?page=$page');
